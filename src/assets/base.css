@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* color pallette */
+:root {
+  --dark-gray : #333333;
+  --light-brown: #E8E1D9;
+  
+  --small-text-size: 13px;
+  --medieum-text-size: 26px;
+  --big-text-size: 56px;
+
+  --small-text-size-mobile : 10px;
+  --medieum-text-size-mobile: 16px;
+  --big-text-size-mobile: 36px;
+}
+
+/* semantic color variables for this project */
+:root {
+  --dark-text-color : #060606;
+  --light-text-color : #E8E1D9;
+  --borders-colors : var(var(--light-brown));
+
+  --main-nav-bar-height : 40px;
+  --main-nav-bar-height-mobile : 30px;
+}
+
+/* for dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+
+  }
+}
+
+
+
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+
+  color: var(--light-brown);
+  background: var(--dark-gray);
+  border-color: var(--borders-colors);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    "Kodchasan",
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 1rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
